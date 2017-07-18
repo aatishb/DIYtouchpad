@@ -26,37 +26,35 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    ![input window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/inputwindow.png)
 
-   This listens for serial messages from the Arduino and streams the 6 input values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
+   This listens for serial messages from the Arduino and streams the 6 voltage values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
 
 5. Run output processing sketch (output_cursor) using Processing. If it works, you should see the following image.
 
    ![output window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/outputwindow.png)
 
-   This sketch receives an X and Y position from Wekinator over OSC port 12000 and plots it on screen.
+   This sketch listens for an X and Y position from Wekinator over OSC port 12000 and plots it on screen.
 
 6. Download [Wekinator](wekinator.org) and run it with the settings below. Hit Next to proceed.
 
    ![wekinator settings](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/wekinatorsettings.png)
 
-   You should get a screen that looks like this
+   If it works, you should see the following screen.
 
    ![wekinator ready](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/wekinatorready.png)
 
 7. Run Wekinator training.
 
-   Use the sliders to choose a cursor position
+   Use the sliders to choose a cursor position.
 
-   Press the physical cursor down on the touchpad at the corresponding position
+   Press the physical cursor (i.e. the spare alligator clip connected to ground) down on the touchpad at the corresponding position.
 
-   With the cursor held to the touchpad, Press Start Recording, collect 100-200 data points, and then press Stop Recording
+   With the cursor held to the touchpad, Press Start Recording, collect 100-200 data points, and then press Stop Recording.
 
-   Repeat this process for a grid of 9-15 calibration points. If you make a mistake, you can stop the recording and press delete last recording, and repeat that measurement.
+   Repeat this process for a grid of 9-15 calibration points. If you make a mistake, you can stop the recording, press 'Delete Last Recording', and repeat that measurement.
 
    Once you are done with data collection, press Train. Depending on how much data you have collected, Wekinator will take a few seconds to a minute to train a neural network using your calibration data.
 
-   Press Train
-
-   Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has 'learned' the mapping between your input and output using the calibration data, it should be able to show you the position of your cursor in realtime.
+   Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has 'learned' the mapping between your input and output using the calibration data, it should show you the position of your cursor in realtime.
 
 8. Modify the Processing sketch to do something cool (e.g. make a drawing or a sound) or try another [example sketch](http://www.wekinator.org/examples/#Processing_animation_audio)
 
