@@ -34,7 +34,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    This sketch listens for an X and Y position from Wekinator over OSC port 12000 and plots it on screen.
 
-6. Download [Wekinator](wekinator.org) and run it with the settings below. Hit Next to proceed.
+6. Download [Wekinator](http://www.wekinator.org/) and run it with the settings below. Hit Next to proceed.
 
    ![wekinator settings](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/wekinatorsettings.png)
 
