@@ -14,7 +14,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
 ![fritzig diagram](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.png)
 
-3. Open the Arduino code in the Arduno IDE.
+3. Open the Arduino code in the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
    To test input, change the Serial communication rate from 1000000 to 250000, upload the code, and open up the serial plotter (under the Tools menu). If it works, you should see something like the below graph when you move the cursor around the touchpad.
 
