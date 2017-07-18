@@ -1,5 +1,6 @@
-//This demo allows wekinator to control background color (hue)
-//This is a continuous value between 0 and 1
+//This demo allows wekinator to output a cursor on screen
+//It expects 2 continuous values between 0 and 1 (x and y position)
+//Built by modyfing Wekinator example code
 
 //Necessary for OSC communication with Wekinator:
 import oscP5.*;
