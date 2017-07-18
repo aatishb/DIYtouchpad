@@ -1,5 +1,8 @@
 # DIYtouchpad
+
 ![arduino circuit](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.JPG)
+
+## Instructions
 
 1. Paint paper with [conductive ink](https://www.bareconductive.com/shop/electric-paint-50ml/)
 
@@ -54,3 +57,7 @@
    Press Train
 
    Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has learned the mapping between your input and output using the calibration data, it should be able to show you the position of your cursor in realtime.
+
+## Questions?
+
+The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab). Feel free to drop us a line!
