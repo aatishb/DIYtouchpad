@@ -2,19 +2,21 @@
 
 ![arduino circuit](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.JPG)
 
+This is a touchpad that you can build with low cost conductive materials (such as conductive paint) and an Arduino. You'll also need some alligator clips and jumper wire (9 of each). It works using the principle of 'voltage triangulation'. When you touch the conductive material with a cursor connected to ground, you end up lowering the voltage at the nearby voltage probes. Using this effect, we can triangulate the position of the cursor. We use Wekinator (a neural network based machine learning program) to work out the mapping between the input voltages and cursor position.
+
 ## Instructions
 
-1. Paint paper with [conductive ink](https://www.bareconductive.com/shop/electric-paint-50ml/)
+1. Paint paper with [conductive ink](https://www.bareconductive.com/shop/electric-paint-50ml/).
 
 2. Assemble circuit.
 
-   The conductive patch is hooked up to 6 voltage probes, a 5V voltage supply, and a ground. The second ground alligator clip (the one disconnected in the image) will be our cursor, with which we'll draw on the touchpad. 
+   The conductive patch is hooked up to 6 voltage probes, a 5V voltage supply, and a ground. Make sure the alligator clips are making good contact with the paint. The second ground alligator clip (the one disconnected in the image) will be our cursor, using which we'll draw on the touchpad.
 
 ![fritzig diagram](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.png)
 
-3. Open the Arduino code in the Arduno IDE
+3. Open the Arduino code in the Arduno IDE.
 
-   To test input, change the Serial communication rate from 1000000 to 250000, upload the code, and open up the serial plotter. If it works, you should see something like the below graph when you move the cursor around the touchpad.
+   To test input, change the Serial communication rate from 1000000 to 250000, upload the code, and open up the serial plotter (under the Tools menu). If it works, you should see something like the below graph when you move the cursor around the touchpad.
 
    ![example data](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/exampledata.png)
 
@@ -40,7 +42,7 @@
 
    ![wekinator ready](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/wekinatorready.png)
 
-7. Run Wekinator training
+7. Run Wekinator training.
 
    Use the sliders to choose a cursor position
 
@@ -60,4 +62,4 @@
 
 ## Questions?
 
-The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab). The code is free to use and open source. If you have questions or you like what we're building, feel free to drop us a line!
+The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab). We were inspired by [Electrick](http://yang-zhang.me/research/Electrick/Electrick.html). The code is free to use and open source. If you have questions or you like what we're building, feel free to drop us a line!
