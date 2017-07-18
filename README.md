@@ -24,17 +24,15 @@
 
    ![input window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/inputwindow.png)
 
-   This listens for serial messages from the Arduino and streams the 6 input values to Wekinator over OSC port 6448
+   This listens for serial messages from the Arduino and streams the 6 input values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
 
-   For the purposes of this demo, OSC is a way to send messages from one program to another on your computer
-
-5. Run output processing sketch (output_cursor) using Processing.
+5. Run output processing sketch (output_cursor) using Processing. If it works, you should see the following image.
 
    ![output window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/outputwindow.png)
 
-   This receives an X and Y position from Wekinator over OSC port 12000
+   This sketch receives an X and Y position from Wekinator over OSC port 12000 and plots it on screen.
 
-6. Download Wekinator and run it with the settings below. Hit Next to proceed.
+6. Download [Wekinator](wekinator.org) and run it with the settings below. Hit Next to proceed.
 
    ![wekinator settings](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/wekinatorsettings.png)
 
@@ -56,8 +54,10 @@
 
    Press Train
 
-   Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has learned the mapping between your input and output using the calibration data, it should be able to show you the position of your cursor in realtime.
+   Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has 'learned' the mapping between your input and output using the calibration data, it should be able to show you the position of your cursor in realtime.
+
+8. Modify the Processing sketch to do something cool (e.g. make a drawing or a sound) or try another [example sketch](http://www.wekinator.org/examples/#Processing_animation_audio)
 
 ## Questions?
 
-The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab). Feel free to drop us a line!
+The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab). The code is free to use and open source. If you have questions or you like what we're building, feel free to drop us a line!
