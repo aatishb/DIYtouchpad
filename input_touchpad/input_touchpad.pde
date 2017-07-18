@@ -1,6 +1,7 @@
 /**
-* REALLY simple processing sketch that sends mouse x and y position to wekinator
-* This sends 2 input values to port 6448 using message /wek/inputs
+* modified from wekinator example code
+* processing sketch that sends Arduino data to wekinator
+* This sends 6 input values to port 6448 using message /wek/inputs
 **/
 
 import processing.serial.*;
