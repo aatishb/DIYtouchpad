@@ -44,15 +44,15 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
 7. Run Wekinator training.
 
-   Use the sliders to choose a cursor position.
+   Use the sliders to choose a cursor position. The Processing sketch should update the virtual cursor position as you drag the sliders.
 
-   Press the physical cursor (i.e. the spare alligator clip connected to ground) down on the touchpad at the corresponding position.
+   Press the physical cursor (i.e. the spare alligator clip connected to ground) down on the touchpad at the corresponding position to the virtual cursor.
 
-   With the cursor held to the touchpad, Press Start Recording, collect 100-200 data points, and then press Stop Recording.
+   With the physical cursor held to the touchpad, Press Start Recording, collect 100-200 data points, and then press Stop Recording.
 
-   Repeat this process for a grid of 9-15 calibration points. If you make a mistake, you can stop the recording, press 'Delete Last Recording', and repeat that measurement.
+   Repeat this process for a grid of 9-15 different calibration points. If you make a mistake, you can stop the recording, press 'Delete Last Recording', and repeat the last measurement.
 
-   Once you are done with data collection, press Train. Depending on how much data you have collected, Wekinator will take a few seconds to a minute to train a neural network using your calibration data.
+   Once you're done with data collection, press Train. Depending on how much data you collected, Wekinator will take a few seconds to a minute to train a neural network using your calibration data.
 
    Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has 'learned' the mapping between your input and output using the calibration data, it should show you the position of your cursor in realtime.
 
