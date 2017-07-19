@@ -2,7 +2,7 @@
 
 ![arduino circuit](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.JPG)
 
-This is a touchpad that you can build with low cost conductive materials (such as conductive paint) and an Arduino. You'll also need some alligator clips and jumper wire (9 of each). It works using the principle of 'voltage triangulation'. When you touch the conductive material with a cursor connected to ground, you end up lowering the voltage at the nearby voltage probes. Using this effect, we can triangulate the position of the cursor. We use Wekinator (a machine learning program that uses neural networks) to work out the mapping between the input voltages and cursor position.
+This is a touchpad that you can build with low cost conductive materials (such as conductive paint) and an Arduino. You'll also need some alligator clips and jumper wire (9 of each). It works using the principle of *voltage triangulation*. When you touch the conductive material with a cursor connected to ground, you end up lowering the voltage at the nearby voltage probes. Using this effect, we can triangulate the position of the cursor. We use Wekinator (a machine learning program that uses neural networks) to work out the mapping between the input voltages and cursor position.
 
 ## Instructions
 
@@ -52,7 +52,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    Repeat this process for a grid of 9-15 different calibration points. If you make a mistake, you can stop the recording, press 'Delete Last Recording', and repeat the last measurement.
 
-   Once you're done with data collection, press Train. Depending on how much data you collected, Wekinator will take a few seconds to a minute to train a neural network using your calibration data.
+   Once you're done with data collection, press Train. Depending on how much data you collected, Wekinator will take a few seconds to a minute to train a neural network on your calibration data.
 
    Once the training is complete, press Run. This makes Wekinator run as a bridge between your input and output sketch. It has 'learned' the mapping between your input and output using the calibration data, and the output Processing sketch should now display the position of your cursor in realtime.
 
