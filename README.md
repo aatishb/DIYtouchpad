@@ -22,13 +22,13 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    *Remember to change back to 1000000 when done and reupload.*
 
-4. Run input processing sketch (input_touchpad) using Processing. If it works, you should see the following image.
+4. Run input Processing sketch (input_touchpad) using [Processing](https://processing.org/). If it works, you should see the following image.
 
    ![input window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/inputwindow.png)
 
    This listens for serial messages from the Arduino and streams the 6 voltage values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
 
-5. Run output processing sketch (output_cursor) using Processing. If it works, you should see the following image.
+5. Run output Processing sketch (output_cursor) using [Processing](https://processing.org/). If it works, you should see the following image.
 
    ![output window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/outputwindow.png)
 
@@ -42,7 +42,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    ![wekinator ready](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/wekinatorready.png)
 
-7. Run Wekinator training.
+7. Wekinator training.
 
    Use the sliders to choose a cursor position. The Processing sketch should update the virtual cursor position as you drag the sliders.
 
@@ -54,7 +54,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    Once you're done with data collection, press Train. Depending on how much data you collected, Wekinator will take a few seconds to a minute to train a neural network using your calibration data.
 
-   Wekinator is now trained and should be running as a bridge between your input and output sketch. Now that it has 'learned' the mapping between your input and output using the calibration data, it should show you the position of your cursor in realtime.
+   Once the training is complete, press Run. This makes Wekinator run as a bridge between your input and output sketch. It has 'learned' the mapping between your input and output using the calibration data, and the output Processing sketch should now display the position of your cursor in realtime.
 
 8. Modify the Processing sketch to do something cool (e.g. make a drawing or a sound) or try another [example sketch](http://www.wekinator.org/examples/#Processing_animation_audio)
 
