@@ -9,7 +9,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
   * Arduino
   * 9 alligator clips
   * 9 jumper wires
-  * Conductive material. In this demo, we uses paper painted with conductive paint, but the concept should work with many different conductive materials. [Here's](http://www.kobakant.at/DIY/?cat=24) a list of different materials you can experiment with. You'll need to choose a material with a fairly high resistance. 
+  * Conductive material. In this demo, we use paper painted with conductive paint, but the basic concept should work with many different conductive materials. [Here's](http://www.kobakant.at/DIY/?cat=24) a list of different materials you can experiment with. You'll need to choose a material with a reasonably high resistance. 
   * Software: [Arduino IDE](https://www.arduino.cc/en/Main/Software), [Processing](https://processing.org/), [Wekinator](http://www.wekinator.org/)
 
 ## Instructions
