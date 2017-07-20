@@ -40,7 +40,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
 4. Open input Processing sketch (input_touchpad) using [Processing](https://processing.org/). 
 
-   You'll need to install the oscP5 library. You can do this under the Tools menu. Search for oscP5 and install it.
+   You'll need to install the oscP5 library. To do this, navigate to Sketch > Import Library > Add Library. Search for oscP5 and install it.
 
    ![add library](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/importlibrary.png)
 
