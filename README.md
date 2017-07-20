@@ -86,7 +86,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    Once the training is complete, press Run. Wekinator will now run as a bridge between your input and output sketch. It has learned the mapping between your input and output, and the output Processing sketch should now display the position of your cursor in realtime.
 
-8. Modify the Processing sketch to do something cool (e.g. make a drawing or a sound) or try another [example sketch](http://www.wekinator.org/examples/#Processing_animation_audio)
+8. Modify the Processing sketch to do something cool (e.g. make a drawing or a sound) or try another [example sketch](http://www.wekinator.org/examples/#Processing_animation_audio). (You'll need to redo the training for each example.)
 
 ## Questions?
 
