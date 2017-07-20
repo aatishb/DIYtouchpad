@@ -14,7 +14,7 @@ float smooth = 0.5;
 
 void setup()
 {
-  Serial.begin(1000000); // change to 250000 to use the serial plotter
+  Serial.begin(250000); 
 }
 
 void loop()

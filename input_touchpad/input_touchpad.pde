@@ -28,8 +28,19 @@ void setup() {
   size(640, 480, P2D);
   noStroke();
   smooth();
-
-  myPort = new Serial(this, Serial.list()[1], 1000000);
+  
+  String ports[] =  Serial.list();
+  println("Set whichPort to be whichever port is connected to the Arduino");
+  println("It should match with whatever is under Tools>Port in the Arduino IDE");
+  
+  for(int i=0; i<ports.length; i++){
+    println(str(i) + ' ' + ports[i]);
+  }
+  println();
+  
+  int whichPort = 1; // set this to the number for the Arduino port
+  
+  myPort = new Serial(this, Serial.list()[whichPort], 250000);
   myPort.clear();
   
   
