@@ -4,9 +4,17 @@
 
 This is a touchpad that you can build with low cost conductive materials (such as conductive paint) and an Arduino. You'll also need some alligator clips and jumper wire (9 of each). It works using the principle of *voltage triangulation*. When you touch the conductive material with a cursor connected to ground, you end up lowering the voltage at the nearby voltage probes. Using this effect, we can triangulate the position of the cursor. We use Wekinator (a machine learning program that uses neural networks) to work out the mapping between the input voltages and cursor position.
 
+## Parts
+
+  * Arduino
+  * 9 alligator clips
+  * 9 jumper wires
+  * Conductive material. In this demo, we uses paper painted with conductive paint, but the concept should work with many different conductive materials. [Here's](http://www.kobakant.at/DIY/?cat=24) a list of different materials you can experiment with. You'll need to choose a material with a fairly high resistance. 
+  * Software: [Arduino IDE](https://www.arduino.cc/en/Main/Software), [Processing](https://processing.org/), [Wekinator](http://www.wekinator.org/)
+
 ## Instructions
 
-1. Paint paper with [conductive ink](https://www.bareconductive.com/shop/electric-paint-50ml/).
+1. Paint paper with an even coating of [conductive ink](https://www.bareconductive.com/shop/electric-paint-50ml/).
 
 2. Assemble circuit.
 
