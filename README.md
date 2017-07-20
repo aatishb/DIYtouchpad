@@ -18,23 +18,45 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
 2. Assemble circuit.
 
-   The conductive patch is hooked up to 6 voltage probes, a 5V voltage supply, and a ground. Make sure the alligator clips are making good contact with the paint. The second ground alligator clip (the one disconnected in the image) will be our cursor, using which we'll draw on the touchpad.
+   The conductive patch is hooked up to 6 voltage probes, a 5V voltage supply, and a ground. Make sure the alligator clips are making good contact with the paint. The second ground alligator clip (the one disconnected in the image) will be our cursor, using which we'll draw on the touchpad. Try to ensure that the different alligator clips or wire leads don't touch each other directly.
 
 ![fritzig diagram](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.png)
 
 3. Open the Arduino code in the [Arduino IDE](https://www.arduino.cc/en/Main/Software).
 
-   To test input, change the Serial communication rate from 1000000 to 250000, upload the code, and open up the serial plotter (under the Tools menu). If it works, you should see something like the below graph when you move the cursor around the touchpad.
+   Verify & upload the code to the Arduino.
+   
+   *If you get a 'problem uploading to board' error message, check that the port is correctly set to the Arduino (under Tools>Port). The exact port will be different depending on your computer set up, it might look something like this.*
+   
+   ![arduino port](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/arduinoport.png)
+
+   To test input, open up the serial plotter (Tools>Serial Plotter). If it works, you should see something like the below graph when you move the cursor around the touchpad. 
+   
+   *If you don't see this, check that the dropdown menu is set to 250000 baud (this is the rate at which the Arduino is currently sending data over the serial port).*
 
    ![example data](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/exampledata.png)
 
-   *Remember to change back to 1000000 when done and reupload.*
+   *Remember to close the serial plotter when done to free up the serial port.*
 
-4. Run input Processing sketch (input_touchpad) using [Processing](https://processing.org/). If it works, you should see the following image.
+4. Open input Processing sketch (input_touchpad) using [Processing](https://processing.org/). 
+
+   You'll need to install the oscP5 library. You can do this under the Tools menu. Search for oscP5 and install it.
+
+   ![add library](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/importlibrary.png)
+
+   Run the sketch. You may need to tell it which port the Arduino is connected to. To do this, look at the output of the sketch. You should see a list like this:
+   
+   ![choose port](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/whichport.png)
+   
+   Find the number corresponding to the port connected to your Arduino (on our computer this is 1). Then alter the following line of the Processing code to match your port number.
+   
+   ![which port](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/whichportnum.png)
+    
+   Now run the sketch. If it works, you should see the following image.
 
    ![input window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/inputwindow.png)
 
-   This listens for serial messages from the Arduino and streams the 6 voltage values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
+   This sketch listens for serial messages from the Arduino and streams the 6 voltage values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
 
 5. Run output Processing sketch (output_cursor) using [Processing](https://processing.org/). If it works, you should see the following image.
 
