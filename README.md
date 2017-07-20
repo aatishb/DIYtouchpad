@@ -56,7 +56,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    Press the physical cursor (i.e. the spare alligator clip connected to ground) down on the touchpad at the corresponding position to the virtual cursor.
 
-   With the physical cursor held to the touchpad, Press Start Recording, collect 100-200 data points, and then press Stop Recording.
+   With the physical cursor held to the touchpad, Press Start Recording, wait a couple of seconds, and then press Stop Recording.
 
    Repeat this process for a grid of 9-15 different calibration points. If you make a mistake, you can stop the recording, press 'Delete Last Recording', and repeat the last measurement.
 
