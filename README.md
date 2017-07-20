@@ -18,7 +18,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
 2. Assemble circuit.
 
-   The conductive patch is hooked up to 6 voltage probes, a 5V voltage supply, and a ground. Make sure the alligator clips are making good contact with the paint. The second ground alligator clip (the one disconnected in the image) will be our cursor, using which we'll draw on the touchpad. Try to ensure that the different alligator clips or wire leads don't touch each other directly.
+   The conductive patch is hooked up to 6 voltage probes, a 5V voltage supply, and a ground. Make sure the alligator clips are making good contact with the paint. The second ground alligator clip (the one disconnected in the wiring diagram) will be our cursor, using which we'll draw on the touchpad. Try to ensure that the different alligator clips or wire leads don't touch each other directly.
 
 ![fritzig diagram](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/DIYtouchpad.png)
 
@@ -52,13 +52,13 @@ This is a touchpad that you can build with low cost conductive materials (such a
    
    ![which port](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/whichportnum.png)
     
-   Now run the sketch. If it works, you should see the following image.
+   Now run the sketch. If it works, you should see the following screen.
 
    ![input window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/inputwindow.png)
 
    This sketch listens for serial messages from the Arduino and streams the 6 voltage values to Wekinator over OSC port 6448. OSC is a way to send messages from one program to another on your computer (or between computers, although we won't use that here).
 
-5. Run output Processing sketch (output_cursor) using [Processing](https://processing.org/). If it works, you should see the following image.
+5. Run output Processing sketch (output_cursor) using [Processing](https://processing.org/). If it works, you should see the following screen.
 
    ![output window](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/outputwindow.png)
 
