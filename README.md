@@ -31,12 +31,12 @@ This is a touchpad that you can build with low cost conductive materials (such a
    ![arduino port](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/arduinoport.png)
 
    To test input, open up the serial plotter (Tools>Serial Plotter). If it works, you should see something like the below graph when you move the cursor around the touchpad. 
-   
-   *If you don't see this, check that the dropdown menu is set to 250000 baud (this is the rate at which the Arduino is currently sending data over the serial port).*
 
    ![example data](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/exampledata.png)
 
-   *Remember to close the serial plotter when done to free up the serial port.*
+   *If you don't see this, check that the dropdown menu is set to 250000 baud (this is the rate at which the Arduino is currently sending data over the serial port).*
+
+   *Important: Remember to close the serial plotter when done to free up the serial port.*
 
 4. Open input Processing sketch (input_touchpad) using [Processing](https://processing.org/). 
 
