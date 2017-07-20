@@ -26,7 +26,7 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
    Verify & upload the code to the Arduino.
    
-   *If you get a 'problem uploading to board' error message, you may need to tell the Arduino IDE which port your Arduino is connected to (under Tools > Port). The exact port will be different depending on your computer set up, it might look something like this.*
+   *If you get a 'problem uploading to board' error message, you may need to tell the Arduino IDE which port your Arduino is connected to (under Tools > Port). The exact port will be different depending on your computer setup, it might look something like this.*
    
    ![arduino port](https://raw.githubusercontent.com/aatishb/DIYtouchpad/master/images/arduinoport.png)
 
