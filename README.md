@@ -90,4 +90,4 @@ This is a touchpad that you can build with low cost conductive materials (such a
 
 ## Questions?
 
-The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab). We were inspired by [Electrick](http://yang-zhang.me/research/Electrick/Electrick.html). The code is free to use and open source. If you have questions or you like what we're building, feel free to drop us a line!
+The DIY touchpad was built by [Aatish Bhatia](https://aatishb.com/) and [Sharon De La Cruz](http://unoseistres.com/) at the [StudioLab](cst.princeton.edu/studiolab) with feedback & input from Lian Zhu and Alice Tang. We were inspired by [Electrick](http://yang-zhang.me/research/Electrick/Electrick.html). The code is free to use and open source. If you have questions or you like what we're building, feel free to drop us a line!
